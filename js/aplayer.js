@@ -28,7 +28,7 @@
           autoplay: false,
           theme: '#49B1F5',
           loop: 'all',
-          order: 'list',
+          order: "random",
           preload: 'metadata',
           listFolded: true,
           listMaxHeight: '260px',
