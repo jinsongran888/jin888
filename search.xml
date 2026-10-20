@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>边狱巴士私服（应 jcb 所邀）</title>
+    <url>/2026/10/20/%E8%BE%B9%E7%8B%B1%E5%B7%B4%E5%A3%AB%E7%A7%81%E6%9C%8D/</url>
+    <content><![CDATA[<h2 id="Lethe"><a href="#Lethe" class="headerlink" title="Lethe"></a>Lethe</h2><table>
+<thead>
+<tr>
+<th>项</th>
+<th>地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>官网（下载 &#x2F; Save 管理）</td>
+<td><a href="https://lethelc.site/">lethelc.site</a></td>
+</tr>
+<tr>
+<td>中文安装文档</td>
+<td><a href="https://docs.lethelc.site/install/cninstall">docs.lethelc.site&#x2F;install&#x2F;cninstall</a></td>
+</tr>
+<tr>
+<td>中文 FAQ</td>
+<td><a href="https://docs.lethelc.site/faq/cnFAQ">docs.lethelc.site&#x2F;faq&#x2F;cnFAQ</a></td>
+</tr>
+<tr>
+<td>英文文档</td>
+<td><a href="https://docs.lethelc.site/">docs.lethelc.site</a></td>
+</tr>
+<tr>
+<td>Discord（魔法自理）</td>
+<td><a href="https://discord.com/invite/XjsaUNwU">discord.com&#x2F;invite&#x2F;XjsaUNwU</a>（#lethe-releases &#x2F; #tech-support &#x2F; 自制内容 mod 区）</td>
+</tr>
+</tbody></table>
+<h2 id="Windows-教程简述"><a href="#Windows-教程简述" class="headerlink" title="Windows 教程简述"></a>Windows 教程简述</h2><ol>
+<li>下载 <code>LetheLauncher-Distribution-7.zip</code> —— 标着 <strong>Distribution</strong> 的 zip，不是 Source code</li>
+<li>把「整个文件夹」解压到一个空目录（不是只拖 exe 出来）</li>
+<li>运行里面的 <code>LimbusCompany.exe</code>（玫瑰图标）→ 自动更新并启动</li>
+<li>出现问题：去 <code>BepInEx/plugins/</code>，把 <code>Lethe.dll</code> 换成 <a href="https://api.lethelc.site/Lethe.dll">https://api.lethelc.site/Lethe.dll</a></li>
+<li>重开游戏，进入服务器</li>
+<li>Linux &#x2F; Wine 用户：启动项加 <code>WINEDLLOVERRIDES=&quot;winhttp=n,b&quot; %command%</code>（有兼容问题切 Proton GE）</li>
+</ol>
+<h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><ul>
+<li><strong>全章节通关</strong>：官网 → Save Info → 勾 <code>Reset to completed state</code> → Reset Chapter State</li>
+<li><strong>改人格等级 &#x2F; E.G.O 同步</strong>：官网的人格界面、E.G.O 界面</li>
+</ul>
+<hr>
+<p>未完待续……</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>资源</tag>
+        <tag>私服</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2026/10/17/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
