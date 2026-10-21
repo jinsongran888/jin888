@@ -1,6 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>核武器</title>
+    <url>/2026/10/21/%E6%A0%B8%E6%AD%A6%E5%99%A8/</url>
+    <content><![CDATA[<p>孩子们，我后悔了，这里真不能说，示意我也不放了，就讲述我把自己开了的路程，开盒出来 31 条信息，连汤带水一堆，不要怀疑你在哪泄漏的，哪都有，我则整理了一下数据源。</p>
+<p>我把它整理成了一份数据源清单。</p>
+<h2 id="1-数据源总表（14-个，按风险排序）"><a href="#1-数据源总表（14-个，按风险排序）" class="headerlink" title="1. 数据源总表（14 个，按风险排序）"></a>1. 数据源总表（14 个，按风险排序）</h2><table>
+<thead>
+<tr>
+<th>#</th>
+<th>数据源</th>
+<th>性质判断</th>
+<th>条数</th>
+<th>泄漏了什么</th>
+<th>风险</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>户籍数据</td>
+<td>政务&#x2F;公安侧流出</td>
+<td>2</td>
+<td>姓名·身份证·出生年月·出生地·性别生肖·手机×4·邮箱·户籍详址（楼栋门牌）·车牌</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>某金融平台包</td>
+<td>平台撞库包</td>
+<td>2</td>
+<td>用户名·MD5 口令·姓名·邮箱·身份证·出生年月</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>QQ 账号密码</td>
+<td>平台撞库包</td>
+<td>1</td>
+<td>QQ 号·明文口令</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>某阅读平台包</td>
+<td>平台撞库包</td>
+<td>1</td>
+<td>用户名·MD5 口令（反查即弱口令）·邮箱</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>某电商泄露资料</td>
+<td>平台撞库包</td>
+<td>3</td>
+<td>姓名·用户名·SHA1 口令·邮箱·手机·归属地</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>黑产打包包 A</td>
+<td>黑产打包代号</td>
+<td>4</td>
+<td>姓名·身份证·出生年月·出生地·手机·邮箱·户籍地址·同户人关系</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>黑产打包包 B</td>
+<td>黑产打包代号</td>
+<td>4</td>
+<td>姓名·身份证·手机×18·车牌·旧地址</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>QQ 绑定手机</td>
+<td>平台侧关联表</td>
+<td>2</td>
+<td>QQ 号 ↔ 手机号 映射</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>9</td>
+<td>运营商&#x2F;终端侧包</td>
+<td>运营商&#x2F;终端侧</td>
+<td>1</td>
+<td>手机·IMEI·TAC·厂商·机型</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>某内容平台包</td>
+<td>平台撞库包</td>
+<td>1</td>
+<td>邮箱·明文口令（还被错填进「电话」字段）</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>11</td>
+<td>全国法人</td>
+<td>工商公示聚合</td>
+<td>4</td>
+<td>姓名·身份证·统一社会信用代码·企业名称</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>12</td>
+<td>人口二要素</td>
+<td>实名核验接口日志</td>
+<td>2</td>
+<td>姓名·身份证·出生年月（仅此两项，但足以撞所有实名接口）</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>13</td>
+<td>运营商类黑产包</td>
+<td>黑产打包代号（疑实名&#x2F;在网类）</td>
+<td>2</td>
+<td>姓名·身份证·手机×2·内部评分字段</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>14</td>
+<td>号段客户名单整包</td>
+<td>号段&#x2F;客户名单整包</td>
+<td>2</td>
+<td>姓名·身份证·215+1 个手机号</td>
+<td>P3（污染）</td>
+</tr>
+</tbody></table>
+<p><strong>数据源命名解码</strong>：黑产包里那些很玄的名字——「神秘数据」「中品仙丹」「全球通数据」「内部数据源」——都不是机构名，是地下数据商给「包」起的代号。名字越玄，越说明是转手多次的二手货，也越容易张冠李戴。</p>
+<h2 id="2-按人展开：谁被泄漏了什么"><a href="#2-按人展开：谁被泄漏了什么" class="headerlink" title="2. 按人展开：谁被泄漏了什么"></a>2. 按人展开：谁被泄漏了什么</h2><table>
+<thead>
+<tr>
+<th>对象</th>
+<th>命中记录</th>
+<th>关键泄漏</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>洪某（80 后）</td>
+<td>户籍、电商×2、金融平台包</td>
+<td>全套实名 + 4 个手机 + 2 个邮箱 + 4 个地址变体 + 2 组口令</td>
+</tr>
+<tr>
+<td>洪某（00 后，未成年）</td>
+<td>黑产包、运营商类包×2</td>
+<td>身份证 + 手机，另挂 2 个外省号码（疑错拼）</td>
+</tr>
+<tr>
+<td>金某（10 后，未成年）</td>
+<td>黑产包 B</td>
+<td>身份证 + 手机×2</td>
+</tr>
+<tr>
+<td>车某（50 后）</td>
+<td>黑产包、二要素接口</td>
+<td>真户籍地址（乡镇级）、同户人 3 人、手机</td>
+</tr>
+<tr>
+<td>洪某（80 后）</td>
+<td>黑产包 B、工商聚合</td>
+<td>手机×2、车牌 1 副、企业 1 家</td>
+</tr>
+<tr>
+<td>—（一证多名）</td>
+<td>9 条（全库最多）</td>
+<td>6 种姓名写法 + 4 家企业（2 家在外省）+ 手机号 230 个（其中 215 个来自号段整包）+ 2 个旧地址</td>
+</tr>
+<tr>
+<td>刘某（50 后）</td>
+<td>黑产包 A</td>
+<td>身份证 + 手机 + 邮箱</td>
+</tr>
+<tr>
+<td>金某（70 后）</td>
+<td>黑产包 A</td>
+<td>身份证 + 手机 + 邮箱</td>
+</tr>
+</tbody></table>
+<h2 id="3-扩线节点（一个号码串起多个源，优先级最高）"><a href="#3-扩线节点（一个号码串起多个源，优先级最高）" class="headerlink" title="3. 扩线节点（一个号码串起多个源，优先级最高）"></a>3. 扩线节点（一个号码串起多个源，优先级最高）</h2><table>
+<thead>
+<tr>
+<th>号码</th>
+<th>命中源数</th>
+<th>牵着谁</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>号码①</td>
+<td>5</td>
+<td>我 + 2 个未成年 + 1 个 QQ + 1 条 IMEI 记录</td>
+</tr>
+<tr>
+<td>号码②</td>
+<td>5</td>
+<td>我 + 电商 + 车某 + 1 个 QQ + 金融平台包</td>
+</tr>
+<tr>
+<td>号码③</td>
+<td>3</td>
+<td>我 + 洪某（80 后）+ 1 家通讯公司（污染）</td>
+</tr>
+<tr>
+<td>号码④</td>
+<td>3</td>
+<td>我 + 车某 + 金某（70 后）</td>
+</tr>
+<tr>
+<td>邮箱①</td>
+<td>4</td>
+<td>撞库包 &#x2F; 黑产包 &#x2F; 电商 &#x2F; 内容平台</td>
+</tr>
+</tbody></table>
+<p>仅仅一个人全家都能开，浙江尤甚，尤甚（某群聊信息验证），不知原因，仅作提醒。个人隐私也不是那么容易泄漏——在我获得同学同意后开户，对方仅有户籍信息，证明信息保密仍然有用。</p>
+<p>在此声明，本人不会再用开户手段，亦不会教授他人；注册尽量用虚拟号。不知所言。</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>隐私</tag>
+        <tag>自查</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2026/10/17/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -49,6 +273,60 @@
       <tags>
         <tag>资源</tag>
         <tag>分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>边狱巴士私服（应 jcb 所邀）</title>
+    <url>/2026/10/20/%E8%BE%B9%E7%8B%B1%E5%B7%B4%E5%A3%AB%E7%A7%81%E6%9C%8D/</url>
+    <content><![CDATA[<h2 id="Lethe"><a href="#Lethe" class="headerlink" title="Lethe"></a>Lethe</h2><table>
+<thead>
+<tr>
+<th>项</th>
+<th>地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>官网（下载 &#x2F; Save 管理）</td>
+<td><a href="https://lethelc.site/">lethelc.site</a></td>
+</tr>
+<tr>
+<td>中文安装文档</td>
+<td><a href="https://docs.lethelc.site/install/cninstall">docs.lethelc.site&#x2F;install&#x2F;cninstall</a></td>
+</tr>
+<tr>
+<td>中文 FAQ</td>
+<td><a href="https://docs.lethelc.site/faq/cnFAQ">docs.lethelc.site&#x2F;faq&#x2F;cnFAQ</a></td>
+</tr>
+<tr>
+<td>英文文档</td>
+<td><a href="https://docs.lethelc.site/">docs.lethelc.site</a></td>
+</tr>
+<tr>
+<td>Discord（魔法自理）</td>
+<td><a href="https://discord.com/invite/XjsaUNwU">discord.com&#x2F;invite&#x2F;XjsaUNwU</a>（#lethe-releases &#x2F; #tech-support &#x2F; 自制内容 mod 区）</td>
+</tr>
+</tbody></table>
+<h2 id="Windows-教程简述"><a href="#Windows-教程简述" class="headerlink" title="Windows 教程简述"></a>Windows 教程简述</h2><ol>
+<li>下载 <code>LetheLauncher-Distribution-7.zip</code> —— 标着 <strong>Distribution</strong> 的 zip，不是 Source code</li>
+<li>把「整个文件夹」解压到一个空目录（不是只拖 exe 出来）</li>
+<li>运行里面的 <code>LimbusCompany.exe</code>（玫瑰图标）→ 自动更新并启动</li>
+<li>出现问题：去 <code>BepInEx/plugins/</code>，把 <code>Lethe.dll</code> 换成 <a href="https://api.lethelc.site/Lethe.dll">https://api.lethelc.site/Lethe.dll</a></li>
+<li>重开游戏，进入服务器</li>
+<li>Linux &#x2F; Wine 用户：启动项加 <code>WINEDLLOVERRIDES=&quot;winhttp=n,b&quot; %command%</code>（有兼容问题切 Proton GE）</li>
+</ol>
+<h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><ul>
+<li><strong>全章节通关</strong>：官网 → Save Info → 勾 <code>Reset to completed state</code> → Reset Chapter State</li>
+<li><strong>改人格等级 &#x2F; E.G.O 同步</strong>：官网的人格界面、E.G.O 界面</li>
+</ul>
+<hr>
+<p>未完待续……</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>资源</tag>
+        <tag>私服</tag>
       </tags>
   </entry>
   <entry>
@@ -129,60 +407,6 @@
       <tags>
         <tag>资源</tag>
         <tag>魔法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>边狱巴士私服（应 jcb 所邀）</title>
-    <url>/2026/10/20/%E8%BE%B9%E7%8B%B1%E5%B7%B4%E5%A3%AB%E7%A7%81%E6%9C%8D/</url>
-    <content><![CDATA[<h2 id="Lethe"><a href="#Lethe" class="headerlink" title="Lethe"></a>Lethe</h2><table>
-<thead>
-<tr>
-<th>项</th>
-<th>地址</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>官网（下载 &#x2F; Save 管理）</td>
-<td><a href="https://lethelc.site/">lethelc.site</a></td>
-</tr>
-<tr>
-<td>中文安装文档</td>
-<td><a href="https://docs.lethelc.site/install/cninstall">docs.lethelc.site&#x2F;install&#x2F;cninstall</a></td>
-</tr>
-<tr>
-<td>中文 FAQ</td>
-<td><a href="https://docs.lethelc.site/faq/cnFAQ">docs.lethelc.site&#x2F;faq&#x2F;cnFAQ</a></td>
-</tr>
-<tr>
-<td>英文文档</td>
-<td><a href="https://docs.lethelc.site/">docs.lethelc.site</a></td>
-</tr>
-<tr>
-<td>Discord（魔法自理）</td>
-<td><a href="https://discord.com/invite/XjsaUNwU">discord.com&#x2F;invite&#x2F;XjsaUNwU</a>（#lethe-releases &#x2F; #tech-support &#x2F; 自制内容 mod 区）</td>
-</tr>
-</tbody></table>
-<h2 id="Windows-教程简述"><a href="#Windows-教程简述" class="headerlink" title="Windows 教程简述"></a>Windows 教程简述</h2><ol>
-<li>下载 <code>LetheLauncher-Distribution-7.zip</code> —— 标着 <strong>Distribution</strong> 的 zip，不是 Source code</li>
-<li>把「整个文件夹」解压到一个空目录（不是只拖 exe 出来）</li>
-<li>运行里面的 <code>LimbusCompany.exe</code>（玫瑰图标）→ 自动更新并启动</li>
-<li>出现问题：去 <code>BepInEx/plugins/</code>，把 <code>Lethe.dll</code> 换成 <a href="https://api.lethelc.site/Lethe.dll">https://api.lethelc.site/Lethe.dll</a></li>
-<li>重开游戏，进入服务器</li>
-<li>Linux &#x2F; Wine 用户：启动项加 <code>WINEDLLOVERRIDES=&quot;winhttp=n,b&quot; %command%</code>（有兼容问题切 Proton GE）</li>
-</ol>
-<h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><ul>
-<li><strong>全章节通关</strong>：官网 → Save Info → 勾 <code>Reset to completed state</code> → Reset Chapter State</li>
-<li><strong>改人格等级 &#x2F; E.G.O 同步</strong>：官网的人格界面、E.G.O 界面</li>
-</ul>
-<hr>
-<p>未完待续……</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>资源</tag>
-        <tag>私服</tag>
       </tags>
   </entry>
 </search>
