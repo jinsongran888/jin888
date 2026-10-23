@@ -461,4 +461,71 @@
         <tag>日记</tag>
       </tags>
   </entry>
+<entry>
+    <title>插件整理</title>
+    <url>/2026/10/23/%E6%8F%92%E4%BB%B6%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<p>DSH（DeepSeek Harness）这套东西好玩的地方在插件：界面、工具、提示词、挂件，全都能换。这里把我正在用的几个列一下，方便重装机器时照单捡回来。</p>
+<p>刷视频和历史改写那两个按本人要求不列，剩下的都在。</p>
+<h2 id="一张表"><a href="#一张表" class="headerlink" title="一张表"></a>一张表</h2><table>
+<thead>
+<tr>
+<th>插件</th>
+<th>版本</th>
+<th>干什么</th>
+<th>仓库</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>dsh-550c-boot</strong></td>
+<td>0.4.0</td>
+<td>启动片头 + 访问授权界面</td>
+<td><a href="https://github.com/yannicksong0106/dsh-550c-boot">yannicksong0106&#x2F;dsh-550c-boot</a></td>
+</tr>
+<tr>
+<td><strong>dsh-ops</strong></td>
+<td>0.3.1</td>
+<td>原生文件 &#x2F; 命令工具（Win、Linux、Apple Silicon）</td>
+<td><a href="https://github.com/T-Auto/dsh-ops">T-Auto&#x2F;dsh-ops</a></td>
+</tr>
+<tr>
+<td><strong>dsh-purge</strong></td>
+<td>1.1.72</td>
+<td>破甲：按模型换提示词</td>
+<td><a href="https://github.com/YuJunZhiXue/dsh-purge">YuJunZhiXue&#x2F;dsh-purge</a></td>
+</tr>
+<tr>
+<td><strong>dsh-whale-widget</strong></td>
+<td>0.4.2</td>
+<td>右下角余额小鲸鱼挂件</td>
+<td><a href="https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget">MeteorNOX&#x2F;DeepSeek-Balance-Whale-Widget</a></td>
+</tr>
+</tbody></table>
+<h2 id="dsh-550c-boot：开机先来一段-550C"><a href="#dsh-550c-boot：开机先来一段-550C" class="headerlink" title="dsh-550c-boot：开机先来一段 550C"></a>dsh-550c-boot：开机先来一段 550C</h2><p>启动时播一段 550C 片头，之后可以走一段可交互的访问授权界面，两套主题：UEG 联合政府 &#x2F; 550C 控制终端。点击或 Enter 推进，Esc 直接跳过；通用设置里能关掉。</p>
+<p>用途就一个：让每次开 DSH 都有点仪式感，而不是对着空白窗口发呆。</p>
+<h2 id="dsh-ops：把文件操作补齐"><a href="#dsh-ops：把文件操作补齐" class="headerlink" title="dsh-ops：把文件操作补齐"></a>dsh-ops：把文件操作补齐</h2><p>给 DSH 补原生文件工具和 PTC 工具，覆盖 Windows x64、Linux x64、macOS Apple Silicon；Windows 上还额外带 Bash 和 PowerShell 7 的可选载荷。</p>
+<p>装它主要是为了让「读文件 &#x2F; 写文件 &#x2F; 跑命令」在三个平台上是同一套手感，不用来回切终端。</p>
+<h2 id="dsh-purge：提示词可换"><a href="#dsh-purge：提示词可换" class="headerlink" title="dsh-purge：提示词可换"></a>dsh-purge：提示词可换</h2><p>破甲类插件，核心是<strong>按模型换不同提示词</strong>，默认那套面向国模「小码酱」。它把提示词层做成可替换的，模型换一个、提示词跟着换一套。</p>
+<p>作者在 README 里写了署名要求，二开之前先看那一节。</p>
+<h2 id="dsh-whale-widget：右下角的小鲸鱼"><a href="#dsh-whale-widget：右下角的小鲸鱼" class="headerlink" title="dsh-whale-widget：右下角的小鲸鱼"></a>dsh-whale-widget：右下角的小鲸鱼</h2><p>DeepSeek 余额小鲸鱼挂件：常驻右下角，显示余额、今日已用、每轮消耗、峰谷定价。泡泡内容能完全自定义——点击序列、并列加权出泡、随机语句&#x2F;随机图片、逐行样式与字体、悬浮快捷编辑、音效、吸附与翻转。</p>
+<p>对我来说是最实用的一个：写东西时不看账单，月底就不会被账单看。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>都是标准 DSH bundle 插件，装法一致：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">dsh plugin install dsh-whale-widget</span><br><span class="line">dsh plugin install github:T-Auto/dsh-ops</span><br></pre></td></tr></table></figure>
+
+<p>装完在 profile 的 <code>bundles</code> 里能看到对应条目，重启 DSH 生效。</p>
+<h2 id="一点经验"><a href="#一点经验" class="headerlink" title="一点经验"></a>一点经验</h2><ul>
+<li>插件冲突多半来自<strong>同一个位置被两个插件抢</strong>（比如右下角），先关一个再看</li>
+<li>界面类插件升级后记得硬刷新浏览器，不然看到的还是旧客户端</li>
+<li>本地的 <code>link:</code> 插件卸载前先备份，<code>node_modules</code> 清了就没了</li>
+</ul>
+<hr>
+<p>清单会随装随更，下次重装照这张表捡。</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>插件</tag>
+        <tag>DSH</tag>
+      </tags>
+  </entry>
 </search>
