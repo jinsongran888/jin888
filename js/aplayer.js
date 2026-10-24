@@ -43,6 +43,26 @@
         window.__globalAPlayer.on('volumechange', function () {
           localStorage.setItem('jin888-volume', window.__globalAPlayer.audio.volume);
         });
+
+        // 音频两条线互备：ghfast 代理（国内快）⇄ github.io 直连
+        var MIRROR = 'https://ghfast.top/https://raw.githubusercontent.com/jinsongran888/jin888-audio/main/audio/';
+        var DIRECT = 'https://jinsongran888.github.io/jin888-audio/audio/';
+        var tried = {};
+        function swap(url, from, to) {
+          return url && url.indexOf(from) === 0 ? to + url.slice(from.length) : null;
+        }
+        window.__globalAPlayer.on('error', function () {
+          var ap = window.__globalAPlayer;
+          var idx = ap.list.index;
+          if (tried[idx]) return;
+          var cur = ap.list.audios[idx] && ap.list.audios[idx].url;
+          var alt = swap(cur, MIRROR, DIRECT) || swap(cur, DIRECT, MIRROR);
+          if (!alt) return;
+          tried[idx] = true;
+          ap.list.audios[idx].url = alt;
+          ap.list.switch(idx);
+          ap.play();
+        });
       })
       .catch(function (err) {
         console.warn('[jin888] 播放清单加载失败：', err);
