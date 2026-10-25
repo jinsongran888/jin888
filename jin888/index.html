@@ -2,6 +2,8 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <!-- 目标站点见到任何 Referer 都会 406，这里直接不发 -->
+  <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>正在进入门户…</title>
   <!-- 目标地址：换隧道后只改这一行 -->
@@ -19,7 +21,7 @@
     <div>
       <div>正在进入门户…</div>
       <div class="tip">如果页面没有自动跳转，点下面这个链接<br>
-        <a id="l" href="https://handy-identity-lounge-railroad.trycloudflare.com/jin888/portal/">https://handy-identity-lounge-railroad.trycloudflare.com/jin888/portal/</a>
+        <a id="l" rel="noreferrer noopener" href="https://handy-identity-lounge-railroad.trycloudflare.com/jin888/portal/">https://handy-identity-lounge-railroad.trycloudflare.com/jin888/portal/</a>
       </div>
     </div>
   </div>
